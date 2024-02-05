@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <h1>Calculadora de somar: </h1>
+    </head>
+    <body>
+        <div>
+            <input id="n1" type="number" placeholder="Digite um numero"></input>
+            <span>+</span>
+            <input id="n2" type="number" placeholder="Digite outro numero"></input>
+            <span>=</span>
+            <p id="result"></p>
+        </div>
+        <div>
+            <button onclick="somar()">Somar</button>
+        </div>
+    </body>
+</html>
+
+
+<script>
+    function somar(){
+        //Operação de soma.
+        let numero1 = parseFloat(document.getElementById("n1").value);
+        let numero2 = parseFloat(document.getElementById("n2").value);
+
+        let result = numero1 + numero2;
+
+        document.getElementById("result").innerText = "Resultado: " + result;
+    }   
+</script>
